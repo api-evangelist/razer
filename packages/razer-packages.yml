@@ -1,0 +1,67 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/razerofficial + https://github.com/WyvrnOfficial
+notes: >-
+  Razer distributes its developer SDKs primarily as source repositories on GitHub
+  (razerofficial and WyvrnOfficial orgs) and as native installers (Chroma SDK), not
+  as published packages on npm/PyPI/NuGet. The C++/Unity Chroma SDKs are being
+  superseded by the WYVRN platform SDKs. First-party SDK repositories below.
+packages:
+- language: javascript
+  registry: github
+  name: HTML5ChromaSDK
+  url: https://github.com/razerofficial/HTML5ChromaSDK
+  install: git clone https://github.com/razerofficial/HTML5ChromaSDK
+  official: true
+  description: JavaScript library for playing Razer Chroma animations in HTML5.
+- language: cpp
+  registry: github
+  name: CChromaEditor
+  url: https://github.com/razerofficial/CChromaEditor
+  install: git clone https://github.com/razerofficial/CChromaEditor
+  official: true
+  deprecated: true
+  description: C++ dynamic library for playing and editing Chroma animations (superseded by WYVRN SDK).
+- language: csharp
+  registry: github
+  name: UnityNativeChromaSDK
+  url: https://github.com/razerofficial/UnityNativeChromaSDK
+  install: git clone https://github.com/razerofficial/UnityNativeChromaSDK
+  official: true
+  deprecated: true
+  description: Unity plugin for Razer Chroma lighting control (superseded by Unity_WyvrnSDK).
+- language: python
+  registry: github
+  name: AIKit
+  url: https://github.com/razerofficial/AIKit
+  install: git clone https://github.com/razerofficial/AIKit
+  official: true
+  description: Razer AI development toolkit for fast LLM inferencing, fine-tuning and multi-GPU.
+- language: cpp
+  registry: github
+  name: Unreal_WyvrnSDK
+  url: https://github.com/WyvrnOfficial/Unreal_WyvrnSDK
+  install: git clone https://github.com/WyvrnOfficial/Unreal_WyvrnSDK
+  official: true
+  description: WYVRN Unreal Engine SDK (Chroma RGB, Sensa HD Haptics, THX Spatial Audio).
+- language: csharp
+  registry: github
+  name: Unity_WyvrnSDK
+  url: https://github.com/WyvrnOfficial/Unity_WyvrnSDK
+  install: git clone https://github.com/WyvrnOfficial/Unity_WyvrnSDK
+  official: true
+  description: WYVRN Unity SDK (Chroma RGB, Sensa HD Haptics, THX Spatial Audio).
+- language: cpp
+  registry: github
+  name: CSDK_WyvrnSDK_GameSample
+  url: https://github.com/WyvrnOfficial/CSDK_WyvrnSDK_GameSample
+  install: git clone https://github.com/WyvrnOfficial/CSDK_WyvrnSDK_GameSample
+  official: true
+  description: WYVRN C++ SDK game sample integration.
+- language: csharp
+  registry: github
+  name: Interhaptics_Unity_CoreSDK
+  url: https://github.com/WyvrnOfficial/Interhaptics_Unity_CoreSDK
+  install: git clone https://github.com/WyvrnOfficial/Interhaptics_Unity_CoreSDK
+  official: true
+  description: Interhaptics core SDK for Unity powering Razer Sensa HD Haptics.

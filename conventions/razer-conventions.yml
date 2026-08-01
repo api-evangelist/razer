@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: derived
+source: https://assets.razerzone.com/dev_portal/REST/html/index.html (Razer Chroma REST API docs)
+scope: Razer Chroma RGB REST API
+conventions:
+  transport: HTTP + JSON
+  base_urls:
+  - http://localhost:54235/razer/chromasdk
+  - https://chromasdk.io:54236/razer/chromasdk
+  session:
+    style: session-uri
+    description: >-
+      A client POSTs application metadata (title, description, author, supported
+      devices, category) to the root chromasdk URI and receives a per-session
+      instance URI in the JSON response; all subsequent effect calls target that
+      session URI. GET on the root returns the current SDK version.
+  keepalive:
+    mechanism: heartbeat
+    method: PUT
+    path: /heartbeat
+    interval_seconds: 1
+    timeout_seconds: 15
+    description: >-
+      Sessions expire after 15 seconds of inactivity; clients send a PUT heartbeat
+      (typically every second) to keep the session alive.
+  device_endpoints:
+  - keyboard
+  - mouse
+  - headset
+  - mousepad
+  - keypad
+  - chromalink
+  effect_model:
+    description: >-
+      Per-device effect payloads (CHROMA_NONE, CHROMA_STATIC, CHROMA_CUSTOM, etc.)
+      are POSTed to the device path under the session URI; a returned effectId can
+      then be applied.
+  authentication:
+    style: none-local
+    description: >-
+      The Chroma REST server runs locally (localhost:54235) alongside Razer Synapse;
+      no API key or token is required — access is scoped to the local session.
+  idempotency:
+    supported: false
+  pagination:
+    supported: false
+cross_links:
+  lifecycle: lifecycle/razer-lifecycle.yml
+  authentication: authentication/razer-authentication.yml
+  packages: packages/razer-packages.yml

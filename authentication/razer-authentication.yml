@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: https://developer.razer.com/ (Razer ID, Razer Gold, Chroma developer programs)
+notes: >-
+  Razer does not publish a single OpenAPI securityScheme surface; auth differs per
+  program. Captured from the developer portal at a high level (no spec to derive
+  from). Detailed OAuth endpoints/scopes for Razer ID and merchant credentials for
+  Razer Gold are published in per-platform PDF guides behind the developer portal.
+summary:
+  types:
+  - none
+  - custom-credentials
+  - user-sign-in
+schemes:
+- name: Razer ID Sign-In
+  program: razerid
+  type: user-sign-in
+  docs: https://developer.razer.com/razerid
+  description: >-
+    Razer ID is Razer's user identity / single sign-on service. Developers integrate
+    it to authenticate and onboard verified Razer users across mobile and web via
+    per-platform SDK guides (Android/iOS/Web).
+- name: Razer Gold merchant credentials
+  program: razer-gold
+  type: custom-credentials
+  docs: https://developer.razer.com/razer-gold-developer-and-partner-program
+  description: >-
+    The Razer Gold payment API authenticates approved merchants/partners with
+    issued merchant credentials; full auth/signature details are provided in the
+    partner documentation at https://api.razer.com/docs.
+- name: Razer Chroma REST (local)
+  program: chroma
+  type: none
+  docs: https://assets.razerzone.com/dev_portal/REST/html/index.html
+  description: >-
+    The Chroma REST API runs on the local machine (localhost:54235) alongside
+    Razer Synapse; no API key or bearer token is required — access is scoped to
+    the local session URI.

@@ -1,0 +1,26 @@
+generated: '2026-07-20'
+method: searched
+source: https://github.com/razerofficial + https://github.com/WyvrnOfficial + https://www.wyvrn.com/
+notes: >-
+  Razer is consolidating its developer SDK surface under the WYVRN platform
+  (wyvrn.com). The legacy razerofficial Chroma SDKs (Unity, GameMaker, C++
+  CChromaEditor) are marked Deprecated on GitHub and are being superseded by the
+  WyvrnOfficial platform SDKs (Unity_WyvrnSDK, Unreal_WyvrnSDK, CSDK_WyvrnSDK)
+  which unify Chroma RGB, Sensa HD Haptics and THX Spatial Audio.
+versioning:
+  scheme: platform-migration
+  current: WYVRN platform SDKs
+  docs: https://www.wyvrn.com/docs/
+deprecation:
+  policy_url: null
+  sunset_header: false
+  note: >-
+    No formal RFC 8594 Sunset/Deprecation header policy published. Deprecation is
+    signalled at the SDK/repository level via GitHub 'Deprecated' status and
+    migration to the WYVRN platform.
+  deprecated_sdks:
+  - https://github.com/razerofficial/CChromaEditor
+  - https://github.com/razerofficial/UnityNativeChromaSDK
+  - https://github.com/razerofficial/Unity_ChromaSDK
+  - https://github.com/razerofficial/GameMakerChromaExtension
+status_page: null

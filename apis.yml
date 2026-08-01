@@ -1,7 +1,24 @@
 aid: razer
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/razer.png
 name: Razer
-description: 'Razer is a company surfaced as a portfolio company of idg-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Razer is a global lifestyle brand for gamers that designs gaming hardware (Blade laptops,
+  mice, keyboards, headsets and other peripherals), software (Synapse, Cortex) and services. For developers
+  Razer operates the WYVRN immersive gaming platform, exposing the Razer Chroma RGB SDK and REST API for
+  controlling 16.8-million-color lighting across devices, the Razer Sensa HD Haptics and THX Spatial Audio
+  SDKs, Razer ID for user sign-in, and the Razer Gold / Razer Silver virtual-currency payment and rewards
+  APIs for in-app monetization across 34,000+ integrated games and apps.'
 url: https://raw.githubusercontent.com/api-evangelist/razer/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,16 +28,72 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
-apis: []
+- Gaming
+- Hardware
+- Peripherals
+- RGB Lighting
+- Haptics
+- Payments
+- Developer Platform
+- SDK
+apis:
+- name: Razer Chroma RGB REST API
+  description: 'Razer Chroma REST API for controlling 16.8-million-color RGB lighting effects across
+    Chroma-enabled keyboards, mice, headsets, mousepads, keypads and ChromaLink devices. Clients POST
+    application info to obtain a session URI, then send per-device effect payloads as JSON over HTTP; a
+    heartbeat PUT keeps the session alive (15s timeout).'
+  humanURL: https://assets.razerzone.com/dev_portal/REST/html/index.html
+  baseURL: https://chromasdk.io:54236/razer/chromasdk
+  properties:
+  - type: Documentation
+    url: https://assets.razerzone.com/dev_portal/REST/html/index.html
+- name: Razer Gold API
+  description: 'Razer Gold developer and partner program payment API for monetizing games and apps with
+    Razer Gold virtual currency across 19 currencies and 5 million channel touchpoints, with fraud and
+    chargeback protection and Razer Silver rewards integration.'
+  humanURL: https://developer.razer.com/razer-gold-developer-and-partner-program
+  baseURL: https://api.razer.com
+  properties:
+  - type: Documentation
+    url: https://api.razer.com/docs
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/razer-domain-security.yml
 - type: Website
   url: https://razer.com/
+- type: DeveloperPortal
+  url: https://developer.razer.com/
+- type: Documentation
+  url: https://www.wyvrn.com/docs/
+- type: GitHubOrganization
+  url: https://github.com/razerofficial
+- type: Blog
+  url: https://www.razer.com/blog
+- type: Support
+  url: https://mysupport.razer.com/
+- type: Packages
+  url: packages/razer-packages.yml
+- type: SDKs
+  url: packages/razer-packages.yml
+- type: Authentication
+  url: authentication/razer-authentication.yml
+- type: Conventions
+  url: conventions/razer-conventions.yml
+- type: Lifecycle
+  url: lifecycle/razer-lifecycle.yml
+- type: LLMsTxt
+  url: llms/razer-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
