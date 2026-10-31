@@ -64,6 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Razer is a company surfaced as a portfolio company of idg-capital and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.
+Razer is a global lifestyle brand for gamers that designs gaming hardware (Blade laptops, mice, keyboards, headsets and other peripherals), software (Synapse, Cortex) and services. For developers Razer operates the WYVRN immersive gaming platform, exposing the Razer Chroma RGB SDK and REST API for controlling 16.8-million-color lighting across devices, the Razer Sensa HD Haptics and THX Spatial Audio SDKs, Razer ID for user sign-in, and the Razer Gold / Razer Silver virtual-currency payment and rewards APIs for in-app monetization across 34,000+ integrated games and apps.
 
-Backed by: idg-capital — https://razer.com/
+**Areas:** Company · Consumer · Gaming · Hardware · Peripherals · RGB Lighting · Haptics · Payments · Developer Platform · SDK
+
+## Razer on APIs.io
+
+Everything profiled for Razer is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/razer/](https://apis.io/providers/razer/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Razer Chroma RGB REST API](https://apis.io/apis/razer/razer-chroma-rgb-rest-api/) — Razer Chroma REST API for controlling 16.8-million-color RGB lighting effects across Chroma-enabled keyboards, mice, headsets, mousepads, keypads and…
+- [Razer Gold API](https://apis.io/apis/razer/razer-gold-api/) — Razer Gold developer and partner program payment API for monetizing games and apps with Razer Gold virtual currency across 19 currencies and 5 million…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Razer Authentication](https://apis.io/security/razer/razer-authentication/)
+- [Razer Domain Security](https://apis.io/security/razer/razer-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://razer.com/)
+- [Documentation](https://www.wyvrn.com/docs/)
+- [Support](https://mysupport.razer.com/)
+- [Blog](https://www.razer.com/blog)
+- [GitHub](https://github.com/razerofficial)
+
+## API Evangelist rating
+
+**Kin Score 15.4** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.7** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/razer/](https://apis.io/providers/razer/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Razer: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/razer/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
